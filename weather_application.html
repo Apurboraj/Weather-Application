@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Weather App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(images/images.jpeg) no-repeat ;
+            background-size: cover;
+            height: 100vh;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            margin-top: 100px;
+            background: transparent;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .forecast{
+            color: rgb(48, 137, 205);
+        }
+        .Alerts{
+            color: rgb(48, 137, 205);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Weather Application</h2>
+        <form class="mb-3">
+            <div class="input-group">
+                <input id="city-name" type="text" class="form-control" placeholder="Enter a location">
+                <div class="input-group-append">
+                    <button onclick="searchTemperature()" type="button" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="weather-status">
+            <img id="weather-icon" src="https://openweathermap.org/img/wn/02d@2x.png" alt="Weather Icon">
+            <h1 id="city">Location</h1>
+            <h3><span id="temperature">--</span>&deg;C</h3>
+            <h4 id="condition">--</h4>
+            <h5 class="forecast">Forecast: <span id="forecast">--</span></h5>
+            <h5 class="Alerts">Alerts: <span id="alerts">No alerts</span></h5>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
